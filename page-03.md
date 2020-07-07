@@ -254,9 +254,7 @@ LocalStorageとはWebStorageと呼ばれるものの一つで、javascriptを用
 
 このlocalStorageを使って自身のブラウザにデータを保存します。
 
-{% hint style='working'%}
 ちなみに今回はこの方法を使いましたが、localStorageはユーザー側で簡単にデータを改変できるのでリリースする時などはお勧めしません！
-{% endhint %}
 
 <br>
 
