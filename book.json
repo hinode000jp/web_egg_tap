@@ -1,0 +1,6 @@
+{
+    "language": "ja",
+    "title": "Unityチュートリアル",
+    "description": "This is a Unity example",
+    "plugins": ["navigator", "hints", "intopic-toc"]
+}

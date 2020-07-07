@@ -1,0 +1,376 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Unityを触ってみよう3 · Unityチュートリアル</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-navigator/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Page-02.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索すると入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Page-01.html">
+            
+                <a href="Page-01.html">
+            
+                    
+                    Unityを触ってみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Page-02.html">
+            
+                <a href="Page-02.html">
+            
+                    
+                    Unityを触ってみよう2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="Page-03.html">
+            
+                <a href="Page-03.html">
+            
+                    
+                    Unityを触ってみよう3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBookで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Unityを触ってみよう3</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x66F8;&#x3044;&#x3066;&#x307F;&#x3088;&#x3046;">&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x66F8;&#x3044;&#x3066;&#x307F;&#x3088;&#x3046;</h1>
+<p>&#x6B21;&#x306B;&#x7C21;&#x5358;&#x306A;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x66F8;&#x3044;&#x3066;&#x307F;&#x3088;&#x3046;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>Unity&#x306F;&#x300C;C#&#x300D;&#x3068;&#x3044;&#x3046;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x8A00;&#x8A9E;&#x3067;&#x52D5;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p><br>
+<br></p>
+<h2 id="&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4F5C;&#x6210;">1. &#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4F5C;&#x6210;</h2>
+<p>&#x307E;&#x305A;&#x306F;&#x30D2;&#x30A8;&#x30E9;&#x30EB;&#x30AD;&#x30FC;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x3067;Sphere&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30DA;&#x30AF;&#x30BF;&#x30FC;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x306E;&#x4E00;&#x756A;&#x4E0B;&#x306B;&#x3042;&#x308B;&#x300C;Add Component&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p><img src="img/img-28.png" alt="img-28"></p>
+<p><br>
+<br></p>
+<p>&#x305D;&#x3057;&#x3066;&#x4E00;&#x756A;&#x4E0B;&#x306E;&#x300C;New script&#x300D;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="img/img-29.png" alt="img-29"></p>
+<p><br>
+<br></p>
+<p>&#x6B21;&#x306B;New script&#x306E;&#x540D;&#x524D;&#x3092;&#x300C;Test&#x300D;&#x3068;&#x3057;&#x3001;&#x300C;Create and Add&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p><img src="img/img-30.png" alt="img-30"></p>
+<p><br>
+<br></p>
+<p>&#x305D;&#x3046;&#x3059;&#x308B;&#x3068;&#x3001;&#x3057;&#x3070;&#x3089;&#x304F;&#x3057;&#x3066;Sphere&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30DA;&#x30AF;&#x30BF;&#x30FC;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x306B;Test&#x3068;&#x3044;&#x3046;&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x304C;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x3002;&#x3053;&#x308C;&#x3067;&#x65B0;&#x3057;&#x3044;&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#xFF08;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#xFF09;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="img/img-31.png" alt="img-31"></p>
+<p><br>
+<br></p>
+<h2 id="&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306E;&#x8A18;&#x8FF0;">2. &#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306E;&#x8A18;&#x8FF0;</h2>
+<p>&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3068;&#x3001;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x306B;&#x3082;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x3053;&#x306E;Test&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x3092;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x30A6;&#x30A3;&#x30F3;&#x30B0;&#x304B;&#x3089;&#x30C0;&#x30D6;&#x30EB;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3067;&#x958B;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p><img src="img/img-32.png" alt="img-32"></p>
+<p><br>
+<br></p>
+<p>&#x3057;&#x3070;&#x3089;&#x304F;&#x5F85;&#x3063;&#x3066;&#x3044;&#x308B;&#x3068;&#x3001;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x66F8;&#x304F;&#x30BD;&#x30D5;&#x30C8;&#x304C;&#x7ACB;&#x3061;&#x4E0A;&#x304C;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="img/img-33.png" alt="img-33"></p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>&#x30D1;&#x30BD;&#x30B3;&#x30F3;&#x306B;&#x3088;&#x3063;&#x3066;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x66F8;&#x304F;&#x30BD;&#x30D5;&#x30C8;&#xFF08;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#xFF09;&#x304C;&#x9055;&#x3044;&#x307E;&#x3059;&#x3002;&#x753B;&#x9762;&#x304C;&#x767D;&#x304F;&#x3066;&#x3082;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x5185;&#x5BB9;&#x304C;&#x4E00;&#x81F4;&#x3057;&#x3066;&#x3044;&#x308C;&#x3070;&#x554F;&#x984C;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;</p>
+</div></div></p>
+<p><br>
+<code>void Start()</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306F;&#x30B7;&#x30FC;&#x30F3;&#x304C;&#x8D77;&#x52D5;&#x3057;&#x305F;&#x6642;&#x306B;&#xFF11;&#x5EA6;&#x3060;&#x3051;&#x547C;&#x3070;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<p><code>void Update()</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306F;&#x30B7;&#x30FC;&#x30F3;&#x304C;&#x8D77;&#x52D5;&#x4E2D;&#x305A;&#x3063;&#x3068;&#x547C;&#x3070;&#x308C;&#x7D9A;&#x3051;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x3064;&#x307E;&#x308A;&#x3001;Start&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306B;&#x306F;&#x30B2;&#x30FC;&#x30E0;&#x306E;&#x521D;&#x671F;&#x5024;&#x3001;Update&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306B;&#x306F;&#x30B2;&#x30FC;&#x30E0;&#x5B9F;&#x884C;&#x4E2D;&#x306E;&#x52D5;&#x304D;&#x306A;&#x3069;&#x3092;&#x8A18;&#x8FF0;&#x3057;&#x305F;&#x308A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p><br>
+&#x307E;&#x305A;&#x306F;Test&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x5909;&#x66F4;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p>10&#x884C;&#x76EE;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;</p>
+<pre><code class="lang-c#">using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Test : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        Debug.Log(&quot;Hello World!&quot;);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
+</code></pre>
+<p><code>Debug.Log(&quot;Hello World!&quot;);</code>&#x3067;&#x3001;<strong>&#x300C;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x306B;Hello World!&#x3068;&#x8868;&#x793A;&#x3057;&#x306A;&#x3055;&#x3044;&#x300D;</strong>&#x3068;&#x3044;&#x3046;&#x547D;&#x4EE4;&#x6587;&#x306B;&#x306A;&#x3063;&#x3066;&#x304A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x200B;<br></p>
+<p>&#x8A18;&#x8FF0;&#x304C;&#x7D42;&#x308F;&#x3063;&#x305F;&#x3089;&#x3001;&#x300C;&#x30D5;&#x30A1;&#x30A4;&#x30EB; -&gt; &#x4FDD;&#x5B58;&#x300D;&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x5909;&#x66F4;&#x3092;&#x4FDD;&#x5B58;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p><img src="img/img-34.png" alt="img-34"></p>
+<p><br>
+&#x6B21;&#x306B;&#x307E;&#x305F;Unity&#x306B;&#x623B;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p><br>
+Unity&#x306B;&#x623B;&#x3063;&#x305F;&#x3089;Play&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p>&#x5B9F;&#x884C;&#x3057;&#x305F;&#x5F8C;&#x306B;&#x3001;Unity&#x306E;&#x5DE6;&#x4E0B;&#x306B;&#x300C;Hello World!&#x300D;&#x3068;&#x8868;&#x793A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308C;&#x3070;&#x6210;&#x529F;&#x3067;&#x3059;&#x3002;</p>
+<p><img src="img/img-35.png" alt="img-35"></p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><h2 id="&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x304B;&#x3063;&#x305F;&#x5834;&#x5408;">3. &#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x304B;&#x3063;&#x305F;&#x5834;&#x5408;</h2>
+<p>&#x307E;&#x305A;&#x306F;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306B;&#x8AA4;&#x5B57;&#x8131;&#x5B57;&#x304C;&#x306A;&#x3044;&#x304B;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306E;&#x4E2D;&#x306B;&#x5168;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x306A;&#x3069;&#x304C;&#x5165;&#x3063;&#x3066;&#x3044;&#x3066;&#x3082;&#x30A8;&#x30E9;&#x30FC;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x30B3;&#x30FC;&#x30C9;&#x306B;&#x9593;&#x9055;&#x3044;&#x304C;&#x306A;&#x304B;&#x3063;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x3082;&#x3046;&#x4E00;&#x5EA6;&#x4FDD;&#x5B58;&#x3092;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+</div></div></p>
+<p><br>
+<br></p>
+<h2 id="&#x305D;&#x308C;&#x3067;&#x3082;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;">4. &#x305D;&#x308C;&#x3067;&#x3082;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;</h2>
+<p>Unity&#x304B;&#x3089;&#x300C;Window -&gt; General -&gt; Console&#x300D;&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p><img src="img/img-36.png" alt="img-36"></p>
+<p><br>
+&#x4E0B;&#x306E;&#x753B;&#x50CF;&#x306E;&#x3088;&#x3046;&#x306A;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x3001;&#x305D;&#x3053;&#x306B;Hello World!&#x3068;&#x51FA;&#x529B;&#x3055;&#x308C;&#x3066;&#x3044;&#x308C;&#x3070;&#x6210;&#x529F;&#x3067;&#x3059;&#x3002;</p>
+<p><img src="img/img-37.png" alt="img-37"></p>
+<p><br>
+&#x307E;&#x3060;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x306E;&#x53F3;&#x4E0A;&#x306E;&#xFF13;&#x3064;&#x306E;&#x9805;&#x76EE;&#x304C;&#x9078;&#x629E;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x304B;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x53F3;&#x304B;&#x3089;&#xFF13;&#x756A;&#x76EE;&#x306E;&#x9805;&#x76EE;&#x304C;&#x9078;&#x629E;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;&#xFF08;&#x5C11;&#x3057;&#x6697;&#x304F;&#x306A;&#x3063;&#x3066;&#x3044;&#x308B;&#xFF09;&#x5834;&#x5408;&#x306F;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x306E;&#x3067;&#x9078;&#x629E;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p><img src="img/img-38.png" alt="img-38"></p>
+<p><br>
+<br></p>
+<p>&#x4EE5;&#x4E0A;&#x304C;Unity&#x306E;&#x7C21;&#x5358;&#x306A;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>Scene&#x306B;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x914D;&#x7F6E;&#x3057;&#x3066;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30DA;&#x30AF;&#x30BF;&#x30FC;&#x304B;&#x3089;&#x5FC5;&#x8981;&#x306A;&#x6A5F;&#x80FD;&#xFF08;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x2026;&#x4F8B;&#x3048;&#x3070;Rigidbody&#xFF08;&#x7269;&#x7406;&#x30A8;&#x30F3;&#x30B8;&#x30F3;&#xFF09;&#x306A;&#x3069;&#xFF09;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3060;&#x3051;&#x3067;&#x7C21;&#x5358;&#x306A;&#x30B2;&#x30FC;&#x30E0;&#x306A;&#x3069;&#x306F;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+</div></div></p>
+<p><br></p>
+<p>Unity&#x3067;&#x7C21;&#x5358;&#x306A;3D&#x30B2;&#x30FC;&#x30E0;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;Udemy&#x306E;<a href="https://www.udemy.com/course/unity-chan-tutorial-01/" target="_blank">&#x300C;&#x30E6;&#x30CB;&#x30C6;&#x30A3;&#x3061;&#x3083;&#x3093;&#x304C;&#x6559;&#x3048;&#x308B;&#xFF01;&#x521D;&#x5FC3;&#x8005;&#x5411;&#x3051;Unity&#x8B1B;&#x5EA7;&#x300D;</a>&#x306A;&#x3069;&#x304C;&#x304A;&#x3059;&#x3059;&#x3081;&#x3067;&#x3059;&#x3002;&#xFF08;&#x3053;&#x306E;&#x30B3;&#x30FC;&#x30B9;&#x306F;Udemy&#x306E;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3060;&#x3051;&#x3067;&#x7121;&#x6599;&#x3067;&#x898B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#xFF09;</p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x66F8;&#x3044;&#x3066;&#x307F;&#x3088;&#x3046;">&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x66F8;&#x3044;&#x3066;&#x307F;&#x3088;&#x3046;</a></p><li><a href="#&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4F5C;&#x6210;">1. &#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4F5C;&#x6210;</a></li><li><a href="#&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306E;&#x8A18;&#x8FF0;">2. &#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306E;&#x8A18;&#x8FF0;</a></li><li><a href="#&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x304B;&#x3063;&#x305F;&#x5834;&#x5408;">3. &#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x304B;&#x3063;&#x305F;&#x5834;&#x5408;</a></li><li><a href="#&#x305D;&#x308C;&#x3067;&#x3082;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;">4. &#x305D;&#x308C;&#x3067;&#x3082;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;</a></li></ul></div><a href="#&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4F5C;&#x6210;" id="goTop"><i class="fa fa-arrow-up"></i></a>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Page-02.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Unityを触ってみよう2">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Unityを触ってみよう3","level":"1.4","depth":1,"previous":{"title":"Unityを触ってみよう2","level":"1.3","depth":1,"path":"Page-02.md","ref":"Page-02.md","articles":[]},"dir":"ltr"},"config":{"plugins":["navigator","hints","intopic-toc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"label":"In this article","selector":".markdown-section h2","visible":true},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Unityチュートリアル","language":"ja","gitbook":"*","description":"This is a Unity example"},"file":{"path":"Page-03.md","mtime":"2020-03-27T05:51:05.656Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-22T03:52:22.658Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/gumshoe.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
