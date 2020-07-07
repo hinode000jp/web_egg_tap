@@ -140,7 +140,6 @@ window.onload = function() {
 
 <br />
 
-{% hint style='info' %}
 ### var、let、constとは
 
 JavaScriptの変数宣言ではvar、let、constを使用します。
@@ -166,7 +165,7 @@ constは再宣言と再代入ができない
 と覚えておいてください。
 
 他にもスコープの違いなど色々あるのですが、今回は割愛します。
-{% endhint %}
+
 
 <br>
 
@@ -245,13 +244,11 @@ window.onload = function() {
 
 ​<br />
 
-{% hint style='info' %}
 ## localStorageとは
 
 LocalStorageとはWebStorageと呼ばれるものの一つで、javascriptを用いてクライアント側にデータを保存する仕組みです。
 
 ユーザのローカル(ブラウザ)にデータを保存することができるので、半永久的にデータを保持することができます。データの読み込み・更新も比較的簡単に行うことができます。
-{% endhint %}
 
 <br>
 

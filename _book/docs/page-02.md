@@ -1,63 +1,41 @@
-# 重力をつけよう
+# 100万の卵を作ってみよう２
 
-次にSphereに重力をつけたいと思います。
+## レイアウトを整えよう
 
-今の状態でUnity中央上のPlayボタンを押してもスフィアは宙に浮いたまま落ちてきません。それはこのスフィアに重力（Rigidbody）がついていない為です。
+ひとまず画像をブラウザに表示することができましたが、画像が少し大きくて左に寄ってしまっています。
+ですので、画像を中央に表示したいと思います。
 
-<br />
-<br />
-まずはヒエラルキーウィンドウでSphereを選択してください。
+各要素の大きさや位置などを変更するために使うのがCSSです。
 
-![image20](img/img-20.png)
+style.cssファイルを開き、以下のコードを記述して保存してください。
 
-<br />
-<br />
-次にインスペクターウィンドウの一番下のAdd Componentから「Physics -> Rigidbody」を選択しましょう。
+```css
+#count {
+    font-size: 60px;
+    text-align: center;
+}
+.img-box {
+    text-align: center;
+}
+#egg-img {
+    width: 30%;
+}
+```
 
-![image21](img/img-21.png)
+index.htmlファイルで指定したid名をCSSで指定するときはid名の前に「#」を、class名をCSSで指定するときはclass名の前に「.」をつけます。
 
-![image22](img/img-22.png)
+内容としては単純に「countのフォントサイズを60px、文字の水平方向を中央に」、「img-boxの画像の水平方向を中央に」、「egg-imgの横幅を親要素の30％に」という感じです。
 
-<br />
-<br />
-下の画像のように、SphereのインスペクターウィンドウにRigidbodyという項目が追加されていればOKです。早速Playボタンを押して実行してみましょう。
+<br>
+<br>
 
-![image23](img/img-23.png)
+![image9](img/play9.png)
 
-<br />
-<br />
-下の画像のように、Playボタンを押してSphereが地面まで落ちれば成功です。
+これで画像（と文字）が良い感じに中央に表示されました。
 
-確認できたらもう一度Playボタンを押してUnityを止めておきましょう。
+{% hint style='info' %}
+画像の位置や大きさが変わらない場合は、index.htmlできちんとstyle.cssを読み込めているか、誤字脱字がないか、ファイル名が合っているかなどを確認してください。
+{% endhint %}
 
-![image24](img/img-24.png)
+一旦CSSはこのくらいにして、次から早速JavaScriptで動きをつけていきましょう。
 
-<br />
-<br />
-
-# 反発させてみよう
-
-このままでは動きが不自然なので、地面に当たったら反発させたいと思います。
-
-この反発もUnityなら簡単に実装できます。
-
-<br />
-プロジェクトウィンドウから「Create -> Physic Material」を選択してください。
-
-![image25](img/img-25.png)
-
-<br />
-<br />
-次に、今作成したNew Physic Materialのインスペクターウィンドウから、Bounciness（反発力）を「0.8」に変更してください。
-
-![image26](img/img-26.png)
-
-<br />
-<br />
-次に、ヒエラルキーウィンドウからSphereを選択します。
-
-そうすると、インスペクターウィンドウにSphereの詳細情報が表示されます。
-
-Sphereの「Sphere Collider」の中のMaterial欄に先ほど作成したNew Physic Materialをドラッグ＆ドロップで入れてください。これでスフィアに反発をつけることができます。ここまで終わったら保存してプロジェクトを実行してみましょう。地面にぶつかって反発してきたら成功です。
-
-![image27](img/img-27.png)
