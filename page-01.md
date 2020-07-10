@@ -41,15 +41,14 @@
         <meta charset="utf-8">
         <title>100万の卵</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/main.js"></script>
     </head>
     <body>
-           
+
+        <script src="js/main.js"></script>
     </body>
 </html>
 ```
 
-![image05](img/play5.png)
 
 このコードの意味については[こちら](https://web-beginner-hinode.gitbook.io/project/htmlwoitemiyou)を参考にしてください。
 
@@ -102,13 +101,13 @@ index.htmlを以下のように変更してください。
         <meta charset="utf-8">
         <title>100万の卵</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/main.js"></script>
     </head>
     <body>
         <p id="count"></p>
         <div class="img-box">
             <img id="egg-img" src="img/egg.png">
         </div>
+        <script src="js/main.js"></script>
     </body>
 </html>
 ```

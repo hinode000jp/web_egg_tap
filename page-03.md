@@ -2,42 +2,17 @@
 
 ## スクリプトの記述
 
-では早速JavaScriptを記述していきたいと思います。
-
-まずはmain.jsファイルを開き、下記のコードを記述してください。
-
-<br />
-<br />
-
-```js
-window.onload = function() {
-
-};
-```
-
-``onload``とは、HTMLなどの文書を操作するときに利用するイベントハンドラのことです。
-
-``window.onload``でページと全ての画像などのリソース類を読み込んでから処理を実行するようにしています。
-
-index.htmlでjsファイルを読み込んだ位置などによっては、js側でエラーになってしまうことがあります。
-
-ですので、main.jsファイルなどではまずは先頭に``window.onload``やDOMのツリー構造が完了した時点で実行される``DOMContentLoaded``などを記述します。
-
-<br />
-<br />
 
 ### Hello World!
 
-では次にきちんとindex.htmlでmain.jsファイルを読み込めているか確認してみましょう。
+まずはきちんとindex.htmlでmain.jsファイルを読み込めているか確認してみましょう。
 
 <br />
 
-main.jsファイルを以下のように変更してください。
+main.jsファイルに以下のコードを記述してください。
 
 ```js
-window.onload = function() {
-    alert("Hello World!");
-};
+alert("Hello World!");
 ```
 
 <br>
@@ -66,12 +41,10 @@ main.jsファイルの中を下記のように変更してください。
 alertは消しちゃって大丈夫です。
 
 ```js
-window.onload = function() {
-    let count = 10;
-    let countText = document.getElementById('count');
+let count = 10;
+let countText = document.getElementById('count');
 
-    countText.textContent = count;
-};
+countText.textContent = count;
 ```
 
 <br>
@@ -103,18 +76,16 @@ letの意味はいったん置いておきます。変数宣言の時につけ�
 main.jsファイルを以下のように変更してください。
 
 ```js
-window.onload = function() {
-    const eggImg = document.getElementById('egg-img');
-    let count = 10;
-    let countText = document.getElementById('count');
+const eggImg = document.getElementById('egg-img');
+let count = 10;
+let countText = document.getElementById('count');
+
+countText.textContent = count;
+
+eggImg.onclick = function() {
+    count--;
 
     countText.textContent = count;
-
-    eggImg.onclick = function() {
-        count--;
-
-        countText.textContent = count;
-    };
 };
 ```
 
@@ -182,23 +153,21 @@ constは再宣言と再代入ができない
 main.jsファイルを以下のように変更してください。
 
 ```js
-window.onload = function() {
-    const eggImg = document.getElementById('egg-img');
-    let count = 10;
-    let countText = document.getElementById('count');
+const eggImg = document.getElementById('egg-img');
+let count = 10;
+let countText = document.getElementById('count');
 
+countText.textContent = count;
+
+eggImg.onclick = function() {
+    count--;
+
+    if (count <= 0) {
+        countText.textContent = 'ワレルトオモウナヨ';
+        this.src = 'img/cracked-egg.png';
+        return;
+    }
     countText.textContent = count;
-
-    eggImg.onclick = function() {
-        count--;
-
-        if (count <= 0) {
-            countText.textContent = 'ワレルトオモウナヨ';
-            this.src = 'img/cracked-egg.png';
-            return;
-        }
-        countText.textContent = count;
-    };
 };
 ```
 
@@ -261,29 +230,27 @@ LocalStorageとはWebStorageと呼ばれるものの一つで、javascriptを用
 main.jsを以下のように修正してください。
 
 ```js
-window.onload = function() {
-    const intialValue = 10;
-    const eggImg = document.getElementById('egg-img');
-    let count = localStorage.getItem('tapCount');
-    let countText = document.getElementById('count');
+const intialValue = 10;
+const eggImg = document.getElementById('egg-img');
+let count = localStorage.getItem('tapCount');
+let countText = document.getElementById('count');
 
-    if (!localStorage.getItem('tapCount')) {
-        count = intialValue;
+if (!localStorage.getItem('tapCount')) {
+    count = intialValue;
+}
+countText.textContent = count;
+
+eggImg.onclick = function() {
+    count--;
+    localStorage.setItem('tapCount', count);
+
+    if (count <= 0) {
+        countText.textContent = 'ワレルトオモウナヨ';
+        this.src = 'img/cracked-egg.png';
+        localStorage.removeItem('tapCount');
+        return;
     }
     countText.textContent = count;
-
-    eggImg.onclick = function() {
-        count--;
-        localStorage.setItem('tapCount', count);
-
-        if (count <= 0) {
-            countText.textContent = 'ワレルトオモウナヨ';
-            this.src = 'img/cracked-egg.png';
-            localStorage.removeItem('tapCount');
-            return;
-        }
-        countText.textContent = count;
-    };
 };
 ```
 
@@ -326,7 +293,6 @@ bodyの閉じタグの前にaudioタグを追加しました。
         <meta charset="utf-8">
         <title>100万の卵</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/main.js"></script>
     </head>
     <body>
         <p id="count"></p>
@@ -337,6 +303,7 @@ bodyの閉じタグの前にaudioタグを追加しました。
         <audio id="tap-sound" preload="auto">
             <source src="sound/tap.mp3" type="audio/mp3">
         </audio>
+        <script src="js/main.js"></script>
     </body>
 </html>
 ```
@@ -353,32 +320,30 @@ bodyの閉じタグの前にaudioタグを追加しました。
 次にmain.jsファイルを開き、以下のように変更してください。
 
 ```js
-window.onload = function() {
-    const initialValue = 10;
-    const eggImg = document.getElementById('egg-img');
-    const tapSound = document.getElementById('tap-sound');
-    let count = localStorage.getItem('tapCount');
-    let countText = document.getElementById('count');
+const initialValue = 10;
+const eggImg = document.getElementById('egg-img');
+const tapSound = document.getElementById('tap-sound');
+let count = localStorage.getItem('tapCount');
+let countText = document.getElementById('count');
 
-    if (!localStorage.getItem('tapCount')) {
-        count = initialValue;
+if (!localStorage.getItem('tapCount')) {
+    count = initialValue;
+}
+countText.textContent = count;
+
+eggImg.onclick = function() {
+    count--;
+    localStorage.setItem('tapCount', count);
+
+    if (count <= 0) {
+        countText.textContent = 'ワレルトオモウナヨ';
+        this.src = 'img/cracked-egg.png';
+        localStorage.removeItem('tapCount');
+        return;
     }
     countText.textContent = count;
-
-    eggImg.onclick = function() {
-        count--;
-        localStorage.setItem('tapCount', count);
-
-        if (count <= 0) {
-            countText.textContent = 'ワレルトオモウナヨ';
-            this.src = 'img/cracked-egg.png';
-            localStorage.removeItem('tapCount');
-            return;
-        }
-        countText.textContent = count;
-        tapSound.currentTime = 0;
-        tapSound.play();
-    };
+    tapSound.currentTime = 0;
+    tapSound.play();
 };
 ```
 
@@ -448,36 +413,34 @@ animationプロパティはその名の通り、アニメーションのプロ�
 main.jsファイルを開き、下記のように変更してください。
 
 ```js
-window.onload = function() {
-    const initialValue = 10;
-    const eggImg = document.getElementById('egg-img');
-    const tapSound = document.getElementById('tap-sound');
-    let count = localStorage.getItem('tapCount');
-    let countText = document.getElementById('count');
+const initialValue = 10;
+const eggImg = document.getElementById('egg-img');
+const tapSound = document.getElementById('tap-sound');
+let count = localStorage.getItem('tapCount');
+let countText = document.getElementById('count');
 
-    if (!localStorage.getItem('tapCount')) {
-        count = initialValue;
+if (!localStorage.getItem('tapCount')) {
+    count = initialValue;
+}
+countText.textContent = count;    
+
+eggImg.onclick = function() {
+    count--;
+    localStorage.setItem('tapCount', count);
+
+    if (count <= 0) {
+        countText.textContent = 'ワレルトオモウナヨ';
+        this.src = 'img/cracked-egg.png';
+        localStorage.removeItem('tapCount');
+        return;
     }
-    countText.textContent = count;    
-
-    eggImg.onclick = function() {
-        count--;
-        localStorage.setItem('tapCount', count);
-
-        if (count <= 0) {
-            countText.textContent = 'ワレルトオモウナヨ';
-            this.src = 'img/cracked-egg.png';
-            localStorage.removeItem('tapCount');
-            return;
-        }
-        countText.textContent = count;
-        tapSound.currentTime = 0;
-        tapSound.play();
-        this.classList.add('egg-tap');
-        setTimeout(function() {
-            eggImg.classList.remove('egg-tap');
-        }, 200);
-    };
+    countText.textContent = count;
+    tapSound.currentTime = 0;
+    tapSound.play();
+    this.classList.add('egg-tap');
+    setTimeout(function() {
+        eggImg.classList.remove('egg-tap');
+    }, 200);
 };
 ```
 
