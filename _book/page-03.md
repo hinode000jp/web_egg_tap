@@ -41,8 +41,8 @@ main.jsファイルの中を下記のように変更してください。
 alertは消しちゃって大丈夫です。
 
 ```js
+const countText = document.getElementById('count');
 let count = 10;
-let countText = document.getElementById('count');
 
 countText.textContent = count;
 ```
@@ -55,15 +55,15 @@ countText.textContent = count;
 
 <br />
 
-``let count = 10;``で「10という値をcountという変数に代入する」という意味になります。
+``const countText = document.getElementById('count');``で「id名がcountの要素をcountTextという変数に代入する」という意味になります。
 
-そして、``let countText = document.getElementById('count');``で「id名がcountの要素をcountTextという変数に代入する」という意味になります。
+そして、``let count = 10;``で「10という値をcountという変数に代入する」という意味になります。
 
 今回の場合は、index.htmlで記述した``<p id="count"></p>``が入りました。
 
 ``countText.textContent = count;``は「countという変数の値をcountTextのテキストに代入する」という意味です。
 
-letの意味はいったん置いておきます。変数宣言の時につけるものと思っていてください。
+const, letの意味はいったん置いておきます。変数宣言の時につけるものと思っていてください。
 
 <br />
 
@@ -76,9 +76,9 @@ letの意味はいったん置いておきます。変数宣言の時につけ�
 main.jsファイルを以下のように変更してください。
 
 ```js
+const countText = document.getElementById('count');
 const eggImg = document.getElementById('egg-img');
 let count = 10;
-let countText = document.getElementById('count');
 
 countText.textContent = count;
 
@@ -153,9 +153,9 @@ constは再宣言と再代入ができない
 main.jsファイルを以下のように変更してください。
 
 ```js
+const countText = document.getElementById('count');
 const eggImg = document.getElementById('egg-img');
 let count = 10;
-let countText = document.getElementById('count');
 
 countText.textContent = count;
 
@@ -231,9 +231,9 @@ main.jsを以下のように修正してください。
 
 ```js
 const intialValue = 10;
+const countText = document.getElementById('count');
 const eggImg = document.getElementById('egg-img');
 let count = localStorage.getItem('tapCount');
-let countText = document.getElementById('count');
 
 if (!localStorage.getItem('tapCount')) {
     count = intialValue;
@@ -321,10 +321,10 @@ bodyの閉じタグの前にaudioタグを追加しました。
 
 ```js
 const initialValue = 10;
+const countText = document.getElementById('count');
 const eggImg = document.getElementById('egg-img');
 const tapSound = document.getElementById('tap-sound');
 let count = localStorage.getItem('tapCount');
-let countText = document.getElementById('count');
 
 if (!localStorage.getItem('tapCount')) {
     count = initialValue;
@@ -414,10 +414,10 @@ main.jsファイルを開き、下記のように変更してください。
 
 ```js
 const initialValue = 10;
+const countText = document.getElementById('count');
 const eggImg = document.getElementById('egg-img');
 const tapSound = document.getElementById('tap-sound');
 let count = localStorage.getItem('tapCount');
-let countText = document.getElementById('count');
 
 if (!localStorage.getItem('tapCount')) {
     count = initialValue;
